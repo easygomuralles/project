@@ -1,7 +1,7 @@
-hplaaaaaaaaaaaaaaaaaaaaaaa
-
-
-
+crear y levantar contenedores ,poner en la terminal los siguientes comandos primer comando docker exec -it laravel-app sh 
+segundo comando composer require tcg/voyager 
+tercer comando php artisan voyager:install --with-dummy 
+luego copiar respaldo de la base de datos y copiarla en phpmyadmin el usuario es root y la contraseña secret y se accede por el puerto 8081 sy como ultimo si no carga la pagina coloque en comando php artisan migrate centro del contenedor de laravel 
 
 
 
