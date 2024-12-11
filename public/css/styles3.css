@@ -1,0 +1,355 @@
+body{
+    background-color:white;
+}
+.menu {
+    width: 100vw;
+    height: 15vh;
+    position: fixed;
+    display: flex;
+    top: 0vh;
+    justify-content: center;
+    align-items: center;
+    background:white;
+    margin-left: -1vh;
+    margin-top:0;
+    z-index: 100000;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.226);
+}
+
+
+.log {
+    position: relative;
+    right: 300px;
+    width: 15vh;
+}
+
+
+.lis {
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    display: flex;
+    gap: 40px;
+    list-style-type: none;
+    padding: 0;
+    float: left;
+}
+
+.lis li {
+    position: relative;
+}
+
+.servicios:hover .sub_links {
+    display: block;
+}
+
+.sub_links {
+    display: none;
+    position: absolute;
+    top: 3vh;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.267);
+    padding: 1rem;
+    border-radius: 5px;
+    z-index: 10;
+}
+
+.sub_links li {
+    margin-bottom: 1rem;
+}
+
+.sub_links a {
+    font-size: 20px;
+    color: #fff;
+    display: block;
+}
+
+
+.lis a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+
+.menu_hamburguesa {
+    display: none;
+}
+
+
+.labe_hamburguesa {
+    display: none;
+}
+
+
+
+
+.lis {
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    display: flex;
+    gap: 40px; 
+    list-style-type: none; 
+    padding: 0; 
+    float: left;
+}
+#pag{
+    color: rgb(94, 175, 83);
+    
+}
+
+
+.lis li {
+    position: relative;
+}
+
+.lis a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.lis a:hover {
+    text-decoration: underline; 
+}
+.linea{
+    border-color: rgb(204, 149, 47);
+}
+#nuest{
+    position: relative;
+    top: 18vh;
+    text-align: center; 
+    margin: 20px auto; 
+    max-width: 800px; 
+    font-size: 50px;
+    color:  black;
+}
+.sub1 {
+    position: relative;
+    top: 25vh;
+    text-align: center; 
+    margin: 20px auto; 
+    max-width: 800px; 
+}
+
+.sub1 label, .sub1 p {
+    display: block; 
+    margin: 10px 0; 
+}
+
+.titu1{
+    position: relative;
+    font-size: 50px;
+}
+.titu2{
+    position: relative;
+    border: 2px solid #0e0d0d;
+    border-radius: 15px;
+    font-size: 45px;
+    color: rgb(255, 255, 255);
+    background: rgb(95, 73, 105);
+}
+.parrafo{
+     font-size: 20px;
+}
+.descubre{
+    top: -7vh;
+    position: relative;
+    font-size: 45px;
+    color: rgb(139, 136, 72);
+}
+.foot{
+    position: relative;
+    margin-top: 40vh;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(95, 78, 30);
+    height: 50vh;
+}
+.contenido{
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    gap: 300px;
+}
+.titulo_f{
+     justify-content: center;
+     text-align: center;
+}
+.subcont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    gap: 15px;
+}
+.subcont2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    gap: 15px;
+}
+.link{
+    color: rgb(255, 255, 255);
+    list-style: none;
+    font-size: 18px;
+}
+.imagen{
+    width: 45vh;
+    height: 25vh;
+    border-radius: 35px;
+    transition: 1.5s;
+}
+.imagen:hover{
+    border-radius: 50%;
+    border: 5px solid white;
+    width: 35vh;
+    height: 25vh;
+    transition: 1.5s;
+}
+
+.cont{
+    border: 3px solid #000000;
+    position: absolute;
+    top: 10vh;
+    left: 60vh;
+    color: rgb(247, 236, 236);
+    font-size: 45px;
+    background: rgba(26, 25, 25, 0.404);
+    max-height: 800px; 
+    font-size: 50px;
+}
+.cont1{
+    position: absolute;
+    top: 10vh;
+    left: 8vh;
+    color: rgb(255, 255, 255);
+    font-size: 45px;
+    border: 3px solid #000000;
+    background: rgba(12, 12, 12, 0.404);
+    max-height: 800px; 
+    font-size: 50px;
+}
+.info{
+    margin-top: 2vh;
+    position: relative;
+    left: -1vh;
+    display: flex;
+    justify-content: space-around;
+    gap: 65px;
+    font-size: 16px;
+}
+.lis li ul{
+    position: absolute;
+    display: none;
+    min-width: 140px;
+}
+.lis li:hover ul{
+display: block;
+}
+.serv {
+    margin-top: 5vh;
+    position: relative;
+    left: -3vh;
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;   
+    transition: 1.5s;
+}
+.serv .imagen{
+    transition: 1.5s;
+}
+.serv .imagen:hover{
+    transition: 1.5s;
+}
+@media screen and (max-width: 600px) {
+    .serv {
+        flex-wrap: wrap; 
+        justify-content: center; 
+    }
+
+    .serv img  {
+        width: 50%; 
+        height: auto; 
+    }
+
+    .lis {
+        display: none;
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 255, 255, 0.582);
+        flex-direction: column;
+        align-items: center;
+        padding-top: 0;
+        gap: 0vh;
+    }#pag{
+        font-size: 15px;
+       
+    }
+
+  
+    .menu_hamburguesa:checked + .lis {
+        display: flex;
+    }
+
+    .labe_hamburguesa {
+        display: block;
+        cursor: pointer;
+    }
+
+ 
+    .sub_links {
+        display: none;
+        position: relative;
+        background-color: rgb(104, 104, 104);
+        padding: 1rem;
+        border-radius: 5px;
+    }
+
+   
+    .servicios:hover .sub_links {
+        display: block;
+    }
+
+    .list_icon {
+        position: relative;
+        left: -27vh;
+        color: rgb(78, 51, 51);
+    }
+    
+    .foot{
+        position: relative;
+        color: rgb(255, 255, 255);
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 80vh;
+    }.link{
+        color: rgb(255, 255, 255);
+        list-style: none;
+        font-size: 10px;
+    }.titsub{
+        font-size: 15px;
+    }.contenido{
+        text-align: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+     }.descubre{
+        font-size: 25px;
+        color: rgb(139, 136, 72);
+     }.nuestros_ser{
+        font-size: 50px;
+    }.titu2{
+        font-size: 40px;
+    }#tamaño{
+        font-size: 15px;
+        color: rgb(0, 0, 0);
+    }
+}

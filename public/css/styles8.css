@@ -1,0 +1,329 @@
+
+
+body {
+    background:rgb(224, 210, 210);
+}
+
+.menu {
+    width: 100vw;
+    height: 15vh;
+    position: fixed;
+    display: flex;
+    top: 0vh;
+    justify-content: center;
+    align-items: center;
+    background:white;
+    margin-left: -1vh;
+    margin-top:0;
+    z-index: 100000;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.226);
+}
+
+
+.log {
+    position: relative;
+    right: 300px;
+    width: 15vh;
+}
+
+
+.lis {
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    display: flex;
+    gap: 40px;
+    list-style-type: none;
+    padding: 0;
+    float: left;
+}
+
+
+.lis li {
+    position: relative;
+}
+
+
+.servicios:hover .sub_links {
+    display: block;
+}
+
+.sub_links {
+    display: none;
+    position: absolute;
+    top: 3vh;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.267);
+    padding: 1rem;
+    border-radius: 5px;
+    z-index: 10;
+}
+.sub_links li {
+    margin-bottom: 1rem;
+}
+.sub_links a {
+    font-size: 20px;
+    color: #fff;
+    display: block;
+}
+.lis a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.menu_hamburguesa {
+    display: none;
+}
+.labe_hamburguesa {
+    display: none;
+}
+
+.foot{
+    position: relative;
+    margin-top: 15vh;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(68, 20, 20);
+    height: 50vh;
+}
+.contenido{
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    gap: 300px;
+}
+.titulo_f{
+     justify-content: center;
+     text-align: center;
+}
+.subcont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    gap: 15px;
+}
+.subcont2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    gap: 15px;
+}
+.link{
+    color: rgb(255, 255, 255);
+    list-style: none;
+    font-size: 18px;
+}
+.im{
+    margin-top: 15vh;
+    width: 100%;
+    height: 35vw;
+    background-color: rgb(15, 55, 163);
+}
+.imv{
+position: relative;
+top: 11vh;
+left: 70%;
+height: 35vh;
+width: 45vh;
+border: 6px solid whitesmoke;
+border-radius: 45px;
+}
+.imv1{
+  position: relative;
+  top: -12vh;
+  left: -10vh;
+  background-color: rgb(9, 9, 95);
+  border-radius: 20%;
+}
+.principal{
+    position: relative;
+    top: -15vh;
+    left: 35vh;
+    width: 90vh;
+    font-size: 23px;
+    color: whitesmoke;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.tit1{
+    color: white;
+    position: relative;
+    top: -15vh;
+    left: 35vh;
+    width: 35vh;
+    font-size: 55px;
+}
+.otras{
+    margin-top: 25vh;
+    position: relative;
+    left: 15%;
+    width: 70%;
+}
+.soluciones{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+.desarrollo_web{
+    background-color: white;
+    height: 35vh;
+    width: 80%;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.13);
+    margin: 20px 0;
+    padding: 20px;
+    text-align: center;
+}
+.recomposicion{
+    background-color: white;
+        height: 35vh;
+        width: 80%;
+        border: 1px solid #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin: 20px 0;
+        padding: 20px;
+        text-align: center;
+}
+.tit2{
+    position: relative;
+    left: 20%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.col{
+    background-color: rebeccapurple;
+    height: 18vh;
+    width: 20vh;
+    border-radius: 33px;
+}
+.col1{
+    background-color: rgb(9, 80, 15);
+    height: 18vh;
+    width: 20vh;
+    border-radius: 33px;
+}
+.linkd{
+    color: orange;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+@media screen and (max-width: 600px) {
+    .lis {
+        display: none;
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 255, 255, 0.582);
+        flex-direction: column;
+        align-items: center;
+        padding-top: 0;
+        gap: 0vh;
+    }#pag{
+        font-size: 15px;
+       
+    }
+
+    .menu_hamburguesa:checked + .lis {
+        display: flex;
+    }
+
+    .labe_hamburguesa {
+        display: block;
+        cursor: pointer;
+    }
+
+    .sub_links {
+        display: none;
+        position: relative;
+        background-color: rgb(104, 104, 104);
+        padding: 1rem;
+        border-radius: 5px;
+    }
+
+
+    .servicios:hover .sub_links {
+        display: block;
+    }
+
+    .list_icon {
+        position: relative;
+        left: -27vh;
+        color: rgb(78, 51, 51);
+    }#tamaño{
+        font-size: 15px;
+        color: rgb(0, 0, 0);
+    }.foot{
+        
+        position: relative;
+        color: rgb(255, 255, 255);
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 80vh;
+    }.link{
+        color: rgb(255, 255, 255);
+        list-style: none;
+        font-size: 10px;
+    }.titsub{
+        font-size: 15px;
+    }.contenido{
+        text-align: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+     }.imv{
+        position: relative;
+        top: 42vh;
+        left: 33vh;
+        height: 15vh;
+        width: 15vh;
+        border: 6px solid whitesmoke;
+        border-radius: 45px;
+        }
+        .imv1{
+          position: relative;
+          height: 30%;
+          width: 30%;
+          top: 1vh;
+          left: -17vh;
+          background-color: rgb(9, 9, 95);
+          border-radius: 20%;
+        }.im{
+            margin-top: 15vh;
+            width: 100%;
+            height: 110vw;
+            background-color: rgb(15, 55, 163);
+        }.tit1{
+            color: white;
+            position: relative;
+            top: -12vh;
+            left: 18vh;
+            width: 34vh;
+            font-size: 25px;
+        }.principal{
+            position: relative;
+            top: -7vh;
+            left: 2vh;
+            width: 50vh;
+            font-size: 15px;
+            color: whitesmoke;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }.otras{
+            margin-top: 25vh;
+            position: relative;
+            left: 0%;
+            width: 90%;
+            font-size: 10px;
+        }.tit2{
+            font-size: 18px;
+            left: 0;
+            width: 100%;
+        }
+}

@@ -1,0 +1,271 @@
+body{
+    background-color: rgb(255, 255, 255);
+}
+.menu {
+    width: 100vw;
+    height: 15vh;
+    position: fixed;
+    display: flex;
+    top: 0vh;
+    justify-content: center;
+    align-items: center;
+    background:white;
+    margin-left: -1vh;
+    margin-top:0;
+    z-index: 100000;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.226);
+}
+
+.log {
+    position: relative;
+    right: 300px;
+    width: 15vh;
+}
+
+.lis {
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    display: flex;
+    gap: 40px;
+    list-style-type: none;
+    padding: 0;
+    float: left;
+}
+
+.lis li {
+    position: relative;
+}
+
+.servicios:hover .sub_links {
+    display: block;
+}
+
+.sub_links {
+    display: none;
+    position: absolute;
+    top: 3vh;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.267);
+    padding: 1rem;
+    border-radius: 5px;
+    z-index: 10;
+}
+
+.sub_links li {
+    margin-bottom: 1rem;
+}
+
+.sub_links a {
+    font-size: 20px;
+    color: #fff;
+    display: block;
+}
+
+.lis a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+
+.menu_hamburguesa {
+    display: none;
+}
+
+
+.labe_hamburguesa {
+    display: none;
+}
+
+
+
+.log{
+    position: relative;
+    right: 300px;
+    width: 15vh;
+}
+#pag{
+    color: rgb(94, 175, 83);
+    
+}
+.lis li {
+    position: relative;
+}
+.lis li ul{
+    position: absolute;
+    display: none;
+    min-width: 140px;
+}
+.lis li:hover ul{
+display: block;
+}
+
+.lis a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.lis a:hover {
+    text-decoration: underline; 
+}
+
+.sub1 {
+    position: relative;
+    top: 25vh;
+    text-align: center; 
+    margin: 20px auto; 
+    max-width: 800px; 
+}
+
+.sub1 label, .sub1 p {
+    display: block; 
+    margin: 10px 0; 
+}
+
+.titu1{
+    position: relative;
+    font-size: 55px;
+    color: rgb(30, 87, 82);
+    font-family: cursive;
+}
+.titu2{
+    position: relative;
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    font-family: sans-serif;
+}
+.parrafo{
+    position: relative;
+    font-size: 55px;
+    color: rgb(30, 87, 82);
+    font-family: cursive;
+}
+.descubre{
+    position: relative;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 73px;
+    color: rgb(0, 0, 0);
+}
+.foot{
+    position: relative;
+    margin-top: 40vh;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(180, 155, 108);
+    height: 50vh;
+}
+.contenido{
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    gap: 300px;
+}
+.titulo_f{
+     justify-content: center;
+     text-align: center;
+}
+.subcont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    gap: 15px;
+}
+.subcont2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    gap: 15px;
+}
+.link{
+    color: rgb(255, 255, 255);
+    list-style: none;
+    font-size: 18px;
+}
+.linea{
+    border-color: rgb(204, 149, 47);
+}
+@media screen and (max-width: 600px) {
+    .lis {
+        display: none;
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 255, 255, 0.582);
+        flex-direction: column;
+        align-items: center;
+        padding-top: 0;
+        gap: 0vh;
+    }#pag{
+        font-size: 15px;
+       
+    }
+
+    
+    .menu_hamburguesa:checked + .lis {
+        display: flex;
+    }
+
+    .labe_hamburguesa {
+        display: block;
+        cursor: pointer;
+    }
+
+  
+    .sub_links {
+        display: none;
+        position: relative;
+        background-color: rgb(104, 104, 104);
+        padding: 1rem;
+        border-radius: 5px;
+    }
+
+
+    .servicios:hover .sub_links {
+        display: block;
+    }
+    .list_icon {
+        position: relative;
+        left: -27vh;
+        color: rgb(78, 51, 51);
+    }
+    
+    .parrafo,.titu1{
+            font-size: 35px;
+        }.titu2{
+            font-size: 25px;
+             color: #9b9797;
+        }.descubre{
+            font-size: 50px;
+        }.foot{
+            position: relative;
+            color: rgb(255, 255, 255);
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 80vh;
+        }.link{
+            color: rgb(255, 255, 255);
+            list-style: none;
+            font-size: 10px;
+        }.titsub{
+            font-size: 15px;
+        }.contenido{
+            text-align: center;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+
+         }#tamaño{
+            font-size: 15px;
+            color: rgb(0, 0, 0);
+        }
+        
+    }

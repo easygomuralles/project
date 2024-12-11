@@ -1,0 +1,46 @@
+services:
+  # Contenedor de la aplicación Laravel
+  app:
+    build: .
+    container_name: laravel-app
+    ports:
+      - "8000:80"  # Expone el puerto 8000 para acceder al sitio
+    volumes:
+      - .:/var/www  # Monta el directorio actual en el contenedor
+    networks:
+      - laravel-network
+
+  # Contenedor de MySQL
+  mysql:
+    image: mysql:5.7
+    container_name: mysql-container
+    environment:
+      MYSQL_ROOT_PASSWORD: secret  # La contraseña de root
+      MYSQL_DATABASE: laravel_db    # El nombre de la base de datos
+    ports:
+      - "3306:3306"  # Expone el puerto de MySQL
+    volumes:
+      - mysql_data:/var/lib/mysql  # Persistencia de los datos
+    networks:
+      - laravel-network
+
+  # Contenedor de phpMyAdmin
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: phpmyadmin-container
+    environment:
+      PMA_HOST: mysql          # El nombre del contenedor de MySQL
+      PMA_PORT: 3306           # El puerto de MySQL
+      MYSQL_ROOT_PASSWORD: secret  # La contraseña del root de MySQL
+    ports:
+      - "8081:80"              # Exponer phpMyAdmin en el puerto 8081
+    networks:
+      - laravel-network
+
+networks:
+  laravel-network:
+    driver: bridge
+
+volumes:
+  mysql_data:
+    driver: local
